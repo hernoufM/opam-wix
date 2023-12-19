@@ -86,3 +86,6 @@ val check_avalable_commands : string -> unit
 
 (** Performs path translations between Windows and Cygwin. See [System.cygpath_out] for more details. *)
 val cyg_win_path : cygpath_out -> string -> string
+
+(** Adopts path to the current system's format (cygwin or win32). *)
+val normalize_path : string -> string
