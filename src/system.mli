@@ -89,3 +89,9 @@ val cyg_win_path : cygpath_out -> string -> string
 
 (** Adopts path to the current system's format (cygwin or win32). *)
 val normalize_path : string -> string
+
+(** Convert safely path from [OpamFilename.t] *)
+val path_str : OpamFilename.t -> string
+
+(** Convert safely path from [OpamFilename.Dir.t] *)
+val path_dir_str : OpamFilename.Dir.t -> string
